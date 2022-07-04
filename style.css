@@ -1,0 +1,71 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+/* hides "Stop" button: */
+.hidden {
+  display: none;
+}
+/********/
+
+/* Rules for button colors*/
+#button1 {
+    background: lightgreen;
+}
+#button1:active, #button1.lit{
+  background: green;
+}
+#button2 {
+    background: lightblue;
+}
+#button2:active, #button1.lit{
+  background: Blue;
+}
+#button3 {
+    background: lightyellow;
+}
+#button3:active, #button1.lit{
+  background: yellow;
+}
+#button4 {
+    background: pink;
+}
+#button4:active, #button1.lit{
+  background: red;
+}
+/*end of rules for button colors*/
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  background-color: slategrey;
+  color: white; 
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+h1{
+  font-family: verdana, arial, sans-serif; 
+}
+button{
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#gameButtonArea > button {
+  width:200px;
+  height:200px;
+  margin:2px;
+}
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
